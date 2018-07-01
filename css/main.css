@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto');
+
+body{
+    max-width: 100rem;
+    background-color: white;
+    line-height: 1.4rem;
+    font-size: 0.618rem;
+    
+}
+
+header{
+    margin: 1rem;
+}
+
+header ul{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+header ul li{
+    border: 1px solid white;
+    background-color: brown;
+}
+header ul li:hover{
+    background-color: maroon;
+    
+}
+header ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.618rem;
+    font-family: 'Merriweather', serif;  
+    font-weight: 600;
+    padding: 0.6rem 0 0.6rem 0;
+}
+
+.tagline{   
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+    background-color: darkcyan;
+    border :2px solid white;
+    box-shadow: 1px 1px 1px black;
+ 
+
+}
+.tagline p{
+    font-size: 1rem;
+    font-family: 'Merriweather',serif;
+    font-weight: 600;
+    color: white;
+    padding: 40px 0 0 10px;
+}
+
+main{
+    margin: 1rem;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+.display{
+    margin-top: 2rem;
+
+}
+.display figure{
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+   
+}
+.display hr
+{
+    margin-top: 2rem;
+}
+.display img{
+    width: 100%;
+    height: 200px;
+}
+legend{
+    background-color: bisque;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+.form-box{
+    width: 100%;
+    padding: 0.6rem;
+    
+}
+.form-box select{
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.dateselect{
+    font-family: 'Merriweather',serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+ .err{
+        margin: 1rem;
+        color: brown;
+    }
+#send{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: cadetblue;
+    height: 100%;
+    clear: both;
+}
+
+footer p{
+    
+    font-size: 0.618rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.sociala{
+    margin-top: 2rem;
+    
+}
+.sociala a i{
+    padding: 1rem;
+    color: white;
+    width: 32%;
+    text-align: center;
+    
+}
+.social a i:hover{
+    text-shadow: 1px 1px 1px black;
+}
+
+.socialb{
+    margin-top: 1rem;
+}
+.socialb a i{
+    padding: 1rem;
+    color: white;
+    width: 48%;
+    text-align: center;
+}
+
+/*Desktop */
+
+@media only screen and (min-width: 40rem) 
+{
+    
+    body{
+        line-height: 1.6rem;
+        font-size: 1rem;
+
+    }
+
+    header{
+        margin: 2rem 7rem 0 7rem;   
+    }
+    .tagline p{
+        font-size: 1.2rem;
+    }
+   
+    header ul li{
+        display: inline-block;
+        width: 15%;
+        text-align: center;
+    }
+    header ul li a{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 100%; 
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    main{
+        margin:2rem 7rem 0 7rem;
+        font-size: 1rem;
+        font-family: 'Roboto',sans-serif;
+        
+    }
+    legend{
+        text-align: left;
+    }
+    
+    .form-box{
+        float: left;
+        width: 32%;
+    }
+     
+    .form-box select{
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 1rem;
+    }
+    
+
+    .dateselect{
+        font-family: 'Merriweather',serif;
+        font-weight: 600;
+        text-align: left;
+    }
+   
+  
+    footer p{
+        font-size: 1rem;
+    }
+    .social{
+        margin: 1rem 15rem 1rem 15rem;
+        font-size: 1rem;
+    }
+    .sociala a i{
+        width: 30%;
+    }
+
+    .display hr
+
+    {
+        display: none;
+    }
+    
+  .display figure
+    {
+        float: left;
+        width: 46%;
+    
+    }
+    .display figure:last-child
+    {
+        margin-left: 2rem;
+    }
+    .display img
+    {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 0 1rem 1rem 0;
+    }
+
+   
+   
+  
+    
+  
+    footer
+    {
+        clear: both;
+    }
+}
